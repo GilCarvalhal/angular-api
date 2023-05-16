@@ -31,4 +31,4 @@ export class CursoComponent implements OnInit {
   remover(): void {
     alert('Remover');
   }
-}
+} 
