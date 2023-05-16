@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CursoComponent implements OnInit {
   //Construtor
-  constructor() {}
+  constructor(private http: HttpClient) {}
 
   //Inicializador
   ngOnInit(): void {}
