@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Curso } from './curso';
 
 @Component({
   selector: 'app-curso',
@@ -7,6 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./curso.component.css'],
 })
 export class CursoComponent implements OnInit {
+  //URL base
+  url = 'http://localhost/api/php/';
+
+  //Vetor de cursos
+  vetor!: Curso[];
+
   //Construtor
   constructor(private http: HttpClient) {}
 
@@ -32,4 +39,4 @@ export class CursoComponent implements OnInit {
   remover(): void {
     alert('Remover');
   }
-} 
+}
